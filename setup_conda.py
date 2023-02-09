@@ -12,7 +12,7 @@ def install_conda(installer_path,destination_path):
 		    os.makedirs(destination_path)
 
 	if not os.path.exists(installer_path):
-	    print('The path for the miniconda does not exist')
+	    print('The path for the miniconda does not exist : {}'.format(installer_path))
 	    raise SystemExit(1)
 	else:
 		miniconda_path = os.path.join(destination_path,'miniconda')
@@ -44,7 +44,7 @@ def main():
 	parser.add_argument("-ip","--installer_path", 
 		help="1a. Location of Miniconda installer: /path_to_miniconda/Miniconda3-py39_22.11.1-1-MacOSX-x86_64.sh")
 	parser.add_argument("-dp","--destination_path", 
-		help="1b. [optional] Destination to install Miniconda: default to /home_dir/opt")
+		help="1b. [optional] Destination to install Miniconda: default to /home_dir/opt", nargs='?', const='')
 	parser.add_argument("-ce","--create_environment", 
 		help="2. Create conda environment, after running part 1",action="store_true")
 	args = parser.parse_args()
