@@ -61,10 +61,11 @@ If your computer does not have `git` you can download from [their website](https
 - Use setup_conda.py to install Miniconda (Conda): 
 
     `$ python3 setup_conda.py -ip ~/Downloads/Miniconda3-py39_22.11.1-1-MacOSX-arm64.sh [-dp /path_to_conda]`
-     `$ python3 setup_conda.py -ip ~/Downloads/Miniconda3-py39_22.11.1-1-MacOSX-arm64.sh [-dp /path_to_conda]`
 
   for Windows users:
-      '$ python setup_conda.py -ip C:/path/to/Miniconda3-py39_22.11.1-1-Windows-x86_64.exe [-dp C:/path_to_conda]'
+  
+     `$ python setup_conda.py -ip C:/path/to/Miniconda3-py39_22.11.1-1-Windows-x86_64.exe [-dp C:/path_to_conda]`
+
 
 **NOTE**: You can omit the –dp field, in which case, miniconda will be installed in your home directory: /Users/joe_shmoe/opt/ 
 
